@@ -18,8 +18,14 @@ document.getElementById("t1").value= document.getElementById("t1").value+val;
 
 function func3() 
 { 
-
+try
+{
   func1(eval(document.getElementById("t1").value)); 
+}
+catch(err)
+{
+  document.getElementById("t1").value)="Malfunction Operation"; 
+}
 }
 </script>
 </head>
